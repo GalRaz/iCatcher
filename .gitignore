@@ -9,6 +9,9 @@ __pycache__/
 # vid files
 *.mp4
 
+# singularity containers
+*.simg
+
 # Distribution / packaging
 .Python
 build/

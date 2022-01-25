@@ -45,7 +45,7 @@ def predict_from_video(opt):
         primary_model = tf.keras.models.load_model(str(path_to_primary_model))
         resize_window = 75
     elif opt.model == "icatcher+":
-        path_to_primary_model = Path("models", "icatcher+.pt")
+        path_to_primary_model = Path("/nese/mit/group/saxelab/users/galraz/icatcher_tests/iCatcher/models", "icatcher+.pt")
         import torch
         primary_model = GazeCodingModel(device=opt.gpu_id, n=5, add_box=True).to(opt.gpu_id)
         if opt.gpu_id == 'cpu':
